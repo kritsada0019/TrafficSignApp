@@ -35,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent DetailIntent = new Intent(MainActivity.this,DetailActivity.class);
+                Intent detailIntent = new Intent(MainActivity.this,DetailActivity.class);
+                detailIntent.putExtra("Title" ,titleStrings[i]);
+                detailIntent.putExtra("Detail", detailStrings[i]);
+                detailIntent.putExtra("Image", ints[i]);
+                startActivity(detailIntent);
             }
         });
 
