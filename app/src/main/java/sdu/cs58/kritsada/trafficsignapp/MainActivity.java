@@ -1,6 +1,7 @@
 package sdu.cs58.kritsada.trafficsignapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     }//end onCreate
 
+    public void clickLink(View view) {
+        Intent LinkIntent = new Intent(Intent.ACTION_VIEW);
+        LinkIntent.setData(Uri.parse("https://www.dlt.go.th/th/"));
+        startActivity(LinkIntent);
+    }//end clickLink
 }//end class
 
 
