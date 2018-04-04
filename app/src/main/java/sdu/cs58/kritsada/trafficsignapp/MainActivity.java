@@ -27,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titleStrings, detailStrings);
         listView.setAdapter(myAdapter);
-    }
 
-}
+        //เมื่อclick แต่ละITEM ในlistview จะเขื่อมโยงไปหน้า Detail
+
+    }//end onCreate
+
+}//end class
 
 

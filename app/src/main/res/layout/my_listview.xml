@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="240"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical"
